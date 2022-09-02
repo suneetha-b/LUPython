@@ -1,0 +1,28 @@
+# *ARGS Example
+def exampleARGS(*argv):
+  c = 0
+  for arg in argv:
+    c += arg
+  print("Sum of values given as input : ", c)
+
+exampleARGS(1,2)
+exampleARGS(1,2,3,4)
+
+/* OUTPUT
+Sum of values given as input :  3
+Sum of values given as input :  10
+*/
+
+#Kwargs Example
+
+def exampleKWARGS(**kwargs):
+  for key, value in kwargs.items():
+    print("%s == %s" %(key, value))
+
+exampleKWARGS(first='Sai', middle = 'b', last = 'balemarthi')
+
+/*OUTPUT
+first == Sai
+middle == b
+last == balemarthi
+*/
